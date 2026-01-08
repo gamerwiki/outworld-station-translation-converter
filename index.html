@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outworld Station Translation Converter</title>
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+      <div class="image-container">
+        <img src="./images/outworld-station.png"/>
+      </div>
+      <div class="title">
+        <h1>Outworld Station Translation Converter</h1>
+        <div class="description">This tool will convert the po file downloaded from Crowdin into csv file.</div>
+      </div>
+    </div>
+
+    <div id="dropzone" class="dropzone">
+        <p>Drop your <b>.po</b> file here</p>
+        <p><small>(or click to browse)</small></p>
+        <input type="file" id="fileInput" style="display: none;" accept=".po" />
+    </div>
+    
+    <div id="fileInfo" class="file-info"></div>
+    <div id="status" class="status"></div>
+    
+    <button id="processBtn" disabled>Process and Download CSV</button>
+    
+    <h3>CSV Preview:</h3>
+    <div id="output-preview"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

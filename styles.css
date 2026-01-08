@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  background: #1B3D44;
+  background: linear-gradient(0deg, rgba(27, 61, 68, 1) 0%, rgba(6, 23, 26, 1) 100%);
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.image-container {
+  max-width: 800px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.title h1, h3 {
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.dropzone.highlight {
+  border-color: #007bff;
+  background: #1d3652;
+}
+
+.status {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.error {
+  background: #fee;
+  color: #b00;
+}
+
+.success {
+  background: #efe;
+  color: #080;
+}
+
+.file-slot {
+  border: 3px dashed #ccc;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  transition: all 0.3s;
+}
+
+.file-slot.highlight {
+  border-color: #4CAF50;
+  background-color: #f0fff0;
+}
+
+.file-inputs {
+  margin-bottom: 20px;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background: transparent;
+  background-image: url(./images/button.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.file-info {
+  margin-top: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.info {
+  padding: 0.5rem;
+}
+
+.status {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #ddffdd;
+  color: #009900;
+}
+
+.error {
+  background-color: #ffdddd;
+  color: #ff0000;
+}
+
+.output-content {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
